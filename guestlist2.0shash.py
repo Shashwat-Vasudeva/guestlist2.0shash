@@ -36,3 +36,26 @@
 #function show_invitation 
 #for each guest in guests lsit 
 #print invitation msg 
+
+
+
+guest = []
+#format helping functions 
+
+def format_name(name)
+return "".(name.title().strip())
+
+def is_duplicate(name):
+return name in guests
+
+
+def add_guets():
+    name = input("Enter guest name:")
+    name = format_name(name)
+
+    if name== "":
+        elif is_duplicate(name):
+            print("Error:Guest already exists")
+            else:
+                guests.append(name)
+                print(f"{name}added successfully")
