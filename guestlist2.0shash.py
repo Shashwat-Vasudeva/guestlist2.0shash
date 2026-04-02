@@ -90,4 +90,18 @@ def remove_guests():
 
 def sort_guests():
     guests.sort()
-    print("Guests sorted alphabetically")         
+    print("Guests sorted alphabetically")    
+
+def show_count():
+    print(f"Total number of guests:{len(guests)}") 
+
+def show_invitation():
+    if not guests:
+        print("No guests to invite")
+        return
+    print("\n--Invitations--")
+    for guest in guests:
+        print(f"Dear{guest}you are invited to the dinner")
+        print("--------")
+
+    
