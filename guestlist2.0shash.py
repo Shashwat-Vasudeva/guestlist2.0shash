@@ -88,4 +88,6 @@ def remove_guests():
         else:
             print("Error: Guest not found.")
 
-            
+def sort_guests():
+    guests.sort()
+    print("Guests sorted alphabetically")         
