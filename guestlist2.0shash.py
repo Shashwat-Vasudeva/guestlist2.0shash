@@ -104,4 +104,37 @@ def show_invitation():
         print(f"Dear{guest}you are invited to the dinner")
         print("--------")
 
-    
+def menu():
+    while True:
+          print("\n===== Guest Management System =====")
+        print("1. Add guest")
+        print("2. Modify guest")
+        print("3. Remove guest")
+        print("4. Sort guests")
+        print("5. Show number of guests")
+        print("6. Show invitations")
+        print("7. Exit")
+
+
+choice = input("Choose an option:").strip()
+
+
+        if choice == "1":
+            add_guest()
+        elif choice == "2":
+            modify_guest()
+        elif choice == "3":
+            remove_guest()
+        elif choice == "4":
+            sort_guests()
+        elif choice == "5":
+            show_count()
+        elif choice == "6":
+            show_invitations()
+        elif choice == "7":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+
