@@ -59,3 +59,22 @@ def add_guets():
             else:
                 guests.append(name)
                 print(f"{name}added successfully")
+
+def modify_guets():
+    old_name = format_name(input("Enter new name:"))
+
+    if old_name not in guests:
+        print("error: Guest not found.")
+        return
+
+        new_name = format_name(input("Enter new name:"))
+
+        if new_name =="":
+            print("Error: Name cannot be empty.")
+            elif is_duplicate(new_name):
+                print("Error: Duplicate name.")
+                else:
+                    index = guests.index(old_name)
+                    guests[index] = new_name
+                    print("Guest updated successfully")
+
