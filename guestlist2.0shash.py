@@ -78,3 +78,14 @@ def modify_guets():
                     guests[index] = new_name
                     print("Guest updated successfully")
 
+
+def remove_guests():
+    name = format_name(input("Enter name to remove:"))
+
+    if name in guests:
+        guests.remove(name)
+        print(f"{name}removed successfully.")
+        else:
+            print("Error: Guest not found.")
+
+            
