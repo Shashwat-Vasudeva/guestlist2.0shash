@@ -9,4 +9,30 @@
 #else 
 #return false
 
-#formating functions---
+#formating functions
+
+#function add_guets 
+#ask user for name 
+#format name 
+#if empty or duplicate
+#print error 
+#else add name to guests
+
+#function modify_guets
+# ask for existing name 
+#format name
+#if name not in guests list
+#print error
+#else ask for new name 
+#if empty print error or duplicate 
+#else replace old name with new 
+
+#function sort_guets
+#sort guests alphabetically 
+
+#function show_count 
+#print number of guests
+
+#function show_invitation 
+#for each guest in guests lsit 
+#print invitation msg 
